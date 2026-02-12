@@ -61,3 +61,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// thank you message for form validation
+
+document.getElementById('joinForm').addEventListener('submit', function(event) {
+    // 1. Stop the page from refreshing
+    event.preventDefault();
+
+    // 2. Hide the form and the instruction text
+    document.getElementById('joinForm').style.display = 'none';
+    document.getElementById('form-instruction').style.display = 'none';
+
+    // 3. Show the "Thank You" message
+    const thankYou = document.getElementById('thankYouMessage');
+    thankYou.style.display = 'block';
+
+    // Optional: Log to console for testing
+    console.log("Form submitted successfully!");
+});

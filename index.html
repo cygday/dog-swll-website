@@ -1,4 +1,4 @@
-<!DOCTYPE h
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -14,7 +14,8 @@
 	
 	<header>
 		<nav class="navbar">
-		<div class="logo"><h2> familypaws </h2> </div>
+		<div class="logo"><a href="index.html"><h2> familypaws </h2></a>
+		 </div>
 	<!---	<input type="checkbox" id="check">-->
 
 <!----	<label for="check" class=checkbtn>
@@ -55,16 +56,16 @@
 
 	
 	<section id="aboutus" class="about">
-		<h2> Raised with care, health and love</h2>
-		<p> At family paws, we nurture each pup with<br> 
-			love, focusing on health, temperament and <br>
-		responsible breeding. </p>
+		<h2> Healthy pups, Happy home</h2>
+		<p>At Family Paws, we pour our hearts into every pup. We focus on the <br>
+			health and personality of our puppies, raising them in a loving<br>
+			 environment so they arrive at your door happy, healthy, and full of life. </p>
 			<div   class="stats">
-				<div><strong>155</strong> stars</div>
+				<div><strong>150</strong> stars</div>
 			</div>
-
-			<button>Meet us</button>
-
+			<a href="#ourdog" class="btn-meet-us">
+        <button style="cursor: pointer;">Meet Our Puppies</button>
+    </a>
 
 	</section>
 
@@ -114,7 +115,7 @@
 <!---lightbox-->
 			<div id="ourdog" class="service-item">
   <h3>Puppies Currently for Sale</h3>
-  <p>Your new best friend is waiting! Purebred pups ready for cuddles.</p>
+  <p>Your new best friend is waiting! Purebreed pups ready for cuddles.</p>
 
   <div class="puppy-gallery">
     <img class="thumb" src="./image/caring.jpg" alt="spitz" data-price="$800">
@@ -157,13 +158,22 @@
 
 	<div class="footer-container">
     <!-- LEFT SIDE: Join Section -->
-	<div id="contact" class="footer-section">
+	<div id="join" class="footer-section">
         <h2>Join family paws</h2>
         <p>Get updates on our pups and kennel news</p>
-        <form>
+        <form id="joinForm" action="https://formspree.io/f/maqdqgkb" method="POST">
             <input type="text" placeholder="Enter full name" class="long-input">
-            <button type="submit">Send Message</button>
+            <input type="email" name="email" placeholder="Enter your email" class="long-input" required>
+           
+			<button type="submit">Send Message</button>
         </form>
+
+		<!-- Hidden Thank You Message -->
+    <div id="thankYouMessage" style="display: none; color: #f39c12; margin-top: 15px;">
+        <h3>Thank you! 🐾</h3>
+        <p>We've received your message and will reach out soon.</p>
+    </div>
+
     </div>
 
     <!-- RIGHT SIDE: Contact Section -->
