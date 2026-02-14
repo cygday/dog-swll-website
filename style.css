@@ -64,7 +64,7 @@ html {
 
 /*mobile reponsive*/
 
-.check {
+.check, .checkbtn {
     display: none;
 }
 
@@ -80,8 +80,21 @@ html {
     }
     .checkbtn {
         display: block;
-
+        font-size: 30px;
+        cursor: pointer;
+        color: #555;
+        float: right;
+        line-height: 80px;
+        margin-right: 20px;
         }
+        .check{
+            display:none;
+        }
+         /* Show the list ONLY when the checkbox is toggled */
+    #check:checked ~ ul {
+        display: flex;
+    }
+    
     .navbar ul li {
         display:block;
         margin: 20px 0;
@@ -91,9 +104,24 @@ html {
         font-size: 20px;
     }
     #check:checked ~ ul {
+        display:flex;
         left: 0;
     }
+    .service-container {
+        grid-template-columns: 1fr;
   }
+  .service-item img {
+    height:auto;
+  }
+  .navbar {
+    padding: 0 20px;
+  }
+  .content{
+    height:auto;
+    min-height: 60vh;
+    padding: 40px 20px;
+  }
+}
 
 
 .content {
@@ -258,6 +286,9 @@ footer{
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    padding:0 15px;
+    width:100%;
+
 }
 
 .puppy-gallery .thumb {
