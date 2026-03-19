@@ -79,3 +79,55 @@ document.getElementById('joinForm').addEventListener('submit', function(event) {
     // Optional: Log to console for testing
     console.log("Form submitted successfully!");
 });
+
+
+//search
+
+const dogData = [
+  { name: "Japanese Spitz", breed: "Spitz", description: "Small, white, fluffy companion.", image: "images/spitz1.jpg" },
+  { name: "German Shepherd", breed: "Spitz", description: "Attentive and devoted.", image: "images/spitz2.jpg" },
+  { name: "Golden Retriever", breed: "Retriever", description: "Friendly and intelligent.", image: "images/golden.jpg" },
+  { name: "Pug"},
+  {name: "beagle"},
+  { name: "labrador"},
+  { name: "rottweiler"},
+  { name: "poddle"},
+  { name: "tibetian mastiff"}
+];
+
+// 2. Main search function
+function runSearch() {
+    const resultsContainer = document.getElementById('search-results');
+    const statusContainer = document.getElementById('search-status');
+    
+    // Only run this if we are on the search page
+    if (!resultsContainer) return;
+
+    // Get search term from URL: k9pawss.netlify.app/search?q=spitz
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get('q')?.toLowerCase() || "";
+
+    // Filter the dog list
+    const filteredDogs = dogs.filter(dog => 
+        dog.name.toLowerCase().includes(query) || 
+        dog.breed.toLowerCase().includes(query)
+    );
+
+    // Display Results
+    if (filteredDogs.length > 0) {
+        statusContainer.innerHTML = `<h2>Showing results for "${query}"</h2>`;
+        resultsContainer.innerHTML = filteredDogs.map(dog => `
+            <div class="dog-card">
+                <img src="${dog.img}" alt="${dog.name}" style="width:200px;">
+                <h3>${dog.name}</h3>
+                <p>${dog.desc}</p>
+            </div>
+        `).join('');
+    } else {
+        statusContainer.innerHTML = `<h2>No results found for "${query}"</h2>`;
+    }
+}
+
+// Run search logic when page loads
+window.addEventListener('DOMContentLoaded', runSearch);
+
