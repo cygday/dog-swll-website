@@ -40,6 +40,47 @@ html {
     list-style:none;
 }
 
+/* for desktop
+.navbar .logo {
+	font-size: 20px;
+	width:40px; 
+}
+*/
+
+/* mobile specific adjustments
+
+@media (max-width: 768px) {
+	.logo {
+		font-size:16px;
+		padding:10px;
+		width: 25px;
+	}
+}
+*/
+/* using flex for horizontal text for mobile browsing */
+
+@media (max-width:768px) {
+     header {
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        gap:10px;
+     }
+     .logo {
+        display: inline-block;
+        white-space:nowrap;
+     }
+}
+
+
+
+/*padding label */
+
+label {
+    padding-left:10px;
+}
+
+
 .navbar ul {
     display: flex;
 }
@@ -389,6 +430,23 @@ footer{
   margin: 8px 0 0 0;
 }
 
+.buy-now-btn button {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.buy-now-btn button:hover {
+  background: #128c7e;
+}
+
 .lightbox-prev, .lightbox-next {
   position: absolute;
   top: 50%;
@@ -429,4 +487,14 @@ footer{
 .lightbox .lightbox-content {
     width: auto !important;
     height: auto !important;
+}
+
+.footer-container button {
+    height: 30px;
+    width: 120px;
+    background: #555;
+}
+
+.footer-container button.my-btn{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
