@@ -160,11 +160,10 @@ if (document.readyState === 'loading') {
     runSearch();
 }
 
-<<<<<<< HEAD
-=======
+
     // Optional: Log to console for testing
     console.log("Form submitted successfully!");
-});
+
 
 
 //search
@@ -217,4 +216,3 @@ function runSearch() {
 // Run search logic when page loads
 window.addEventListener('DOMContentLoaded', runSearch);
 
->>>>>>> origin/main
