@@ -487,6 +487,7 @@ footer{
 .lightbox .lightbox-content {
     width: auto !important;
     height: auto !important;
+<<<<<<< HEAD
 }
 
 .footer-container button {
@@ -498,3 +499,6 @@ footer{
 .footer-container button.my-btn{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+=======
+}
+>>>>>>> origin/main
