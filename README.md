@@ -13,5 +13,7 @@ puppy gallery -> <img title="dog=breed"> added
 social icon -> facebook k9petzone page is  created 
 
 
-
 backend on search 
+
+phone no. activation
+
