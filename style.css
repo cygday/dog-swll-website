@@ -37,12 +37,14 @@ html {
     left: 0;
     right: 0;
     z-index: 1000;
+    white-space: nowrap;
 }
 
 
 .navbar .logo {
     display: flex;
     list-style:none;
+    font-size:14px; /* from claude ai*/
 }
 
 
@@ -53,9 +55,19 @@ html {
         justify-content: space-between;
         gap:10px;
      }
+     header ul li {
+        display: none; /* hide on mobile */
+     }
+     header ul li a {
+        font-size:12px;
+        padding: 4px 6px;
+     }
      .logo {
         display: inline-block;
         white-space:nowrap;
+     }
+     form .search-bar{
+        display:none;
      }
 }
 
