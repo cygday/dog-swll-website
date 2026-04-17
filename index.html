@@ -7,7 +7,7 @@
 <title>k9 pet zone</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<link rel="icon" type="image/jpeg" href="image/title.jpg">
 
 </head>
 
@@ -24,15 +24,16 @@
 </label>
 
 			<ul>
-				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">Home</a></li>
 				<li><a href="#aboutus">About Us</a></li>
+				<li><a href="#services">Services</a></li>
 				<li><a href="#ourdog">Our Dogs</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 			
-
 			<form class="search-bar" action="search.html" method="GET">
-    <input type="text" name="q" placeholder="Search puppies...">
+
+    <input type="text" name="q" placeholder="Search...">
     <button type="submit">🔍</button>
   </form>
 
@@ -49,7 +50,7 @@
 			
 			
 			<div class="conten">
-		<h1>🐾 canine pet zone</h1>
+		<h1 style="font-size:50px;">🐾 canine pet zone</h1>
 		<h2 class="subtitle">Welcome to canine pet zone </h2>
 	
 		<h2 class="description"> We are a small, home-based kennel club <br>
@@ -61,21 +62,78 @@
 
 	
 	<section id="aboutus" class="about">
-		<h2> Healthy pups, Happy home</h2>
+		<h2 style="font-size:50px;"> Healthy pups, Happy home</h2>
 		<p>At Canine Pet, we pour our hearts into every pup. We focus on the <br>
 			health and personality of our puppies, raising them in a loving<br>
 			 environment so they arrive at your door happy, healthy, and full of life. </p>
-			<div   class="stats">
-				<div><strong>150</strong> stars</div>
-			</div>
-			<a href="#ourdog" class="btn-meet-us">
+
+			 <a href="#ourdog" class="btn-meet-us">
         <button style="cursor: pointer;">Meet Our Puppies</button>
     </a>
 
 	</section>
 
-	<section class="services">
-		<h2> Our Services</h2>
+
+			<!-- ===== PRODUCT CARDS SECTION ===== -->
+<div id="ourdog" class="products-section">
+  <h2>🐕 Puppies Currently for Sale</h2>
+  <p>Your new best friend is waiting! Purebreed pups ready for cuddles.</p>
+  
+  <!-- Top Controls -->
+  <div class="products-controls">
+    <div class="search-filter">
+      <input type="text" id="productSearch" placeholder="Search by breed or name..." class="product-search-input">
+    </div>
+    
+    <div class="view-controls">
+      <button class="cart-toggle-btn" id="cartToggleBtn" title="View Cart">
+        🛒 Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="wishlist-toggle-btn" id="wishlistToggleBtn" title="View Wishlist">
+        ❤️ Wishlist <span class="wishlist-count" id="wishlistCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="products-grid" id="productsGrid">
+    <!-- Products inserted via JavaScript -->
+  </div>
+</div>
+
+<!-- Cart Sidebar -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>🛒 Shopping Cart</h3>
+    <button class="close-btn" id="closeCartBtn">×</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p style="text-align: center; color: #999; padding: 20px;">Your cart is empty</p>
+  </div>
+  <div class="cart-total" id="cartTotal" style="display:none;">
+    <p>Total: NPR <span id="cartTotalPrice">0</span></p>
+    <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+  </div>
+</div>
+
+<!-- Wishlist Sidebar -->
+<div class="wishlist-sidebar" id="wishlistSidebar">
+  <div class="wishlist-header">
+    <h3>❤️ My Wishlist</h3>
+    <button class="close-btn" id="closeWishlistBtn">×</button>
+  </div>
+  <div class="wishlist-items" id="wishlistItems">
+    <p style="text-align: center; color: #999; padding: 20px;">Your wishlist is empty</p>
+  </div>
+</div>
+
+<!-- Overlay for sidebars -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+	<section class="services" id="services">
+		<h2 style="font-size:40px;"> Our Services</h2>
 
 
 		<div class="service-container">
@@ -112,76 +170,69 @@
 			companions.
 		</p></div>
 
-			<div id="ourdog" class="service-item">
-  <h3>Puppies Currently for Sale</h3>
-  <p>Your new best friend is waiting! Purebreed pups ready for cuddles.</p>
 
-  <div class="puppy-gallery">
-    <img class="thumb" src="./image/beagle.jpg" title='beagle' alt="beagle" data-price="32000">
-    <img class="thumb" src="./image/golden-retriever.jpg" title='golden retriever' alt="golden Retriever" data-price="25000">
-    <img class="thumb" src="./image/labrador.jpg" title='labrador' alt="labrador, 8 weeks old" data-price="20000">
-    <img class="thumb" src="./image/poodle.jpg" title='poodle' alt="poddle" data-price="30000">
-    <img class="thumb" src="./image/pug.jpg" title='pug' alt="pug" data-price="9000">
-    <img class="thumb" src="./image/rottweiler.jpg" title='rottweiler' alt="rottweiler" data-price="30000">
-    <img class="thumb" src="./image/shepherd.jpg" title='german shepherd' alt="German Shepherd, $500" data-price="15000">
-	<img class="thumb" src="./image/spitz.jpg" title='spitz' alt="spitz" data-price="5000">
-    <img class="thumb" src="./image/tibetian-mastiff.jpg" title='tibetian mastiff' alt="tibetian mastiff" data-price="80000">
-    
 
+		<!-- ===== REVIEWS SECTION ===== -->
+<div class="reviews-section">
+  <h2>⭐ Customer Reviews</h2>
+  <div class="reviews-grid" id="reviewsGrid">
+    <!-- Reviews inserted via JavaScript -->
   </div>
+  <p class="reviews-note">All reviews are from verified customers who adopted our puppies</p>
 </div>
 
-<!-- Lightbox/modal (place once near end of <body>) -->
-<div id="lightbox" class="lightbox" aria-hidden="true">
-  <button class="lightbox-close" aria-label="Close">×</button>
-  <button class="lightbox-prev" aria-label="Previous">❮</button>
-  
-  <div class="lightbox-content">
-    <img class="lightbox-img" src="" alt="">
-    <p class="lightbox-caption"></p>
-    <p class="lightbox-price"></p>
-    <a href="#" class="buy-now-btn" target="_blank"><button>Buy Now via WhatsApp</button></a>
-  </div>
-  
-  <button class="lightbox-next" aria-label="Next">❯</button>
-</div>
 
 	</section>
 
 	<div class="footer-container">
     <!-- LEFT SIDE: Join Section -->
-	<div id="join" class="footer-section">
-        <h2>Join k9 pet zone</h2><br>
-        <p>Get updates on our pups and kennel news</p><br>
-        <form id="joinForm" action="https://formspree.io/f/maqdqgkb" method="POST">
-            <input type="text" placeholder="Enter full name" class="long-input" name="fullname">
-            <input type="email" name="email" placeholder="Enter your email" class="long-input" required>
-           
-			<button type="submit" class="my-btn">Submit</button>
-        </form>
-
-		<!-- Hidden Thank You Message -->
-    <div id="thankYouMessage" style="display: none; color: #f39c12; margin-top: 15px;">
-        <h3>Thank you! 🐾</h3>
-        <p>We've received your message and will reach out soon.</p>
-    </div>
-
-    </div>
+	    <div class="footer-section">
+	        <div class="order-box">
+	          <h4>Order Request Form</h4>
+	          <form id="orderForm" action="https://formspree.io/f/maqdqgkb" method="POST" class="order-form">
+	            <div class="order-row">
+	              <input type="text" name="name" placeholder="Full name" required>
+	              <input type="email" name="email" placeholder="Email address" required>
+	            </div>
+	            <div class="order-row">
+	              <input type="text" name="phone" placeholder="Phone number" required>
+	              <input type="text" name="preferred_breed" placeholder="Preferred breed">
+	            </div>
+	            <div class="order-row">
+	              <input type="number" name="quantity" min="1" placeholder="Quantity" value="1">
+	              <input type="date" name="pickup_date" placeholder="Pickup / visit date">
+	            </div>
+	            <textarea name="message" placeholder="Tell us more about your ideal puppy or any questions"></textarea>
+	            <input type="hidden" name="order_summary" id="orderSummaryInput">
+	            <input type="hidden" name="_subject" value="New Puppy Order Request from k9 pet zone">
+	            <button type="submit" class="my-btn" style="width:250px;height:50px;">Send Order Request</button><br>
+	          </form>
+	          <div id="orderThankYouMessage" style="display:none; color: #1f8a3d; margin-top: 15px;">
+	            <h3>Request sent! 🐾</h3>
+	            <p>We received your order request and will confirm availability manually within 24 hours.</p>
+	          </div>
+	          <p class="order-form-note">Your current cart items will be included automatically if you’ve selected puppies already.</p>
+	        </div>
+	    </div>
 
     <!-- RIGHT SIDE: Contact Section -->
     <div class="footer-section" id="contact">
-        <h3>📞 Contact</h3><br>
-        <p>Reach out anytime, we're here to help</p><br>
+      <div class="contact-box">
+        <h3>📞 Contact & Order</h3><br><br><br>
+        <p style="line-height:2;">Reach out anytime, we're here to help.<br>
+			 Book a puppy, request availability, <br>
+			 or ask about shipping.</p><br>
         <p>EMAIL: <a href="mailto:hello@k9petzone.com">hello@k9petzone.com</a></p><br>
         <p>📱 PHONE: +977-015902403</p><br>
         <p>WhatsApp: +9779849648701</p><br>
-        <p>📍 Location: Kumaribasti, Kathmandu</p><br><br>
+        <p>📍 Location: Kumaribasti, Kathmandu</p><br><br><br><br>
         <div class="social-icons"> 
              <a href="https://www.facebook.com/profile.php?id=61573481203226" class="fab fa-facebook-f"></a>&nbsp;
-  			 <a href="https://instagram.com/k9petzone" class="fab fa-instagram"></a>&nbsp;
-    	 	 <a href="#" class="fab fa-x-twitter"></a> &nbsp;
-  			 <a href="#" class="fab fa-tiktok"></a>&nbsp;
+        	  <a href="https://instagram.com/k9petzone" class="fab fa-instagram"></a>&nbsp;
+        	  <a href="#" class="fab fa-x-twitter"></a> &nbsp;
+        	  <a href="#" class="fab fa-tiktok"></a>&nbsp;
         </div>
+      </div>
     </div>
 </div>
 </main>
@@ -191,8 +242,19 @@
     <p>© 2024 k9 pet zone. All rights reserved.</p>
 </div>
 
+<!-- Tawk.to Live Chat -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/000000000000000000000000/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
 
-	
 	<script src="script.js"></script>
 
 </body>
