@@ -4,7 +4,7 @@ const puppyProducts = [
     id: 1,
     name: "Beagle",
     breed: "Hound",
-    price: 32000,
+    price: 35000,
     image: "./image/beagle.jpg",
     age: "8 weeks",
     health: "Vaccinated, Healthy",
@@ -14,7 +14,7 @@ const puppyProducts = [
     id: 2,
     name: "Golden Retriever",
     breed: "Retriever",
-    price: 25000,
+    price: 12000,
     image: "./image/golden-retriever.jpg",
     age: "10 weeks",
     health: "Vaccinated, Certified",
@@ -24,7 +24,7 @@ const puppyProducts = [
     id: 3,
     name: "Labrador",
     breed: "Retriever",
-    price: 20000,
+    price: 12000,
     image: "./image/labrador.jpg",
     age: "8 weeks",
     health: "Healthy, Registered",
@@ -44,7 +44,7 @@ const puppyProducts = [
     id: 5,
     name: "Pug",
     breed: "Toy",
-    price: 9000,
+    price: 15000,
     image: "./image/pug.jpg",
     age: "8 weeks",
     health: "Healthy, Cute",
@@ -54,7 +54,7 @@ const puppyProducts = [
     id: 6,
     name: "Rottweiler",
     breed: "Working",
-    price: 30000,
+    price: 25000,
     image: "./image/rottweiler.jpg",
     age: "10 weeks",
     health: "Strong, Healthy",
@@ -89,6 +89,116 @@ const puppyProducts = [
     age: "12 weeks",
     health: "Majestic, Premium",
     description: "Powerful, protective, and majestic guardian breed."
+  },
+    {
+    id: 10,
+    name: "Apso",
+    breed: "non sporting dog breed",
+    price: 17000,
+    image: "./image/apso.jpeg",
+    age: "12 weeks",
+    health: "Inquisitive and engaging",
+    description: "Smart, confident and aloof in strangers."
+  },
+    {
+    id: 11,
+    name: "Chow Chow",
+    breed: "very independent and aloof",
+    price: 55000,
+    image: "./image/chow chow.jpeg",
+    age: "8 weeks",
+    health: "High-energy and playful",
+    description: "No Temperament: Aloof, Loyal, Independent, Quiet."
+  },
+    {
+    id: 12,
+    name: "Siberian Husky",
+    breed: "compact body, well-furred coat, erect ears, and thick, sickle-shaped tail",
+    price: 35000,
+    image: "./image/siberian husky.jpeg",
+    age: "6 weeks",
+    health: "Scrappy and playful",
+    description: "strong willed, active, independent, mischievous, and playful."
+  },
+    {
+    id: 13,
+    name: "Chihuahua",
+    breed: "tiny dog with a big attitude.",
+    price: 35000,
+    image: "./image/chihuahua.jpeg",
+    age: "5 weeks",
+    health: "High-energy and playful",
+    description: "Long hair and short coats."
+  },
+    {
+    id: 14,
+    name: "Pomeranian",
+    breed: "Popular toy breeds",
+    price: 75000,
+    image: "./image/pomeranian.jpeg",
+    age: "8 weeks",
+    health: "Bright-eyed and bushy-tailed",
+    description: "Glorious coat, smiling, foxy face, and vivacious personality."
+  },
+    {
+    id: 15,
+    name: "Shih-tzu",
+    breed: "Tibetan toy breed",
+    price: 30000,
+    image: "./image/shih tzu.jpeg",
+    age: "6 weeks",
+    health: " Energy & Playfulness",
+    description: "Clear, alert eyes"
+  },
+    {
+    id: 16,
+    name: "British Bulldog",
+    breed: "thick folds of skin on the brow; round, black, wide-set eyes",
+    price: 95000,
+    image: "./image/british bulldog.jpeg",
+    age: "6 weeks",
+    health: "Blemish-free skin",
+    description: "Equable and kind, resolute, and courageous."
+  },
+    {
+    id: 17,
+    name: "Doberman Pinsher",
+    breed: "Intelligence, loyalty, and athleticism.",
+    price: 350000,
+    image: "./image/doberman pinsher.jpeg",
+    age: "6 weeks",
+    health: "Inquisitive and engaging",
+    description: "Confident and Courageous."
+  },
+    {
+    id: 18,
+    name: "Belgian Malinois",
+    breed: "Intelligent, protective, and highly energetic",
+    price: 75000,
+    image: "./image/belgian malinois.jpeg",
+    age: "8 weeks",
+    health: "Solid/Firm muscle tone",
+    description: "Loyal, confident, and trainable, with natural guarding instincts."
+  },
+    {
+    id: 19,
+    name: "French Bulldog",
+    breed: "companion dog breeds",
+    price: 30000,
+    image: "./image/french bulldog.jpeg",
+    age: "10 weeks",
+    health: "Playful yet calm",
+    description: "Compact size, muscular body, and distinctive bat-shaped ears."
+  },
+    {
+    id: 20,
+    name: "Cocker Spaniel",
+    breed: "sporting group breed",
+    price: 10000,
+    image: "./image/cocker spaniel.jpeg",
+    age: "12 weeks",
+    health: "Excellent obedience",
+    description: "Naturally energetic and aware due to this makes them great hunting partners."
   }
 ];
 
@@ -101,13 +211,13 @@ const reviews = [
     dogBreed: "Golden Retriever"
   },
   {
-    rating: 5,
+    rating: 4,
     text: "Amazing kennel club! Very professional, caring, and transparent about the breeding process. Our Lab is perfect!",
     author: "Rajesh Kumar",
     dogBreed: "Labrador"
   },
   {
-    rating: 5,
+    rating: 3,
     text: "The support team is fantastic. Even after we brought our pup home, they've been available for any questions!",
     author: "Amith Poudel",
     dogBreed: "German Shepherd"
@@ -119,13 +229,13 @@ const reviews = [
     dogBreed: "Poodle"
   },
   {
-    rating: 5,
+    rating: 4,
     text: "Bought a Beagle for my family. The entire process was smooth and the puppy is absolutely fantastic!",
     author: "Vikram Verma",
     dogBreed: "Beagle"
   },
   {
-    rating: 5,
+    rating: 3,
     text: "Professional breeders with genuine love for the dogs. Would give 10 stars if possible!",
     author: "Meera Singh",
     dogBreed: "Rottweiler"
@@ -285,7 +395,7 @@ class UIController {
           </div>
           <div class="product-rating">
             <span class="star-rating">★★★★★</span>
-            <span>(4.9)</span>
+            <span class="rating-score">(4.9)</span>
           </div>
           <div class="product-footer">
             <span class="product-price">NPR ${puppy.price.toLocaleString()}</span>
@@ -611,7 +721,19 @@ const dogs = [
   { name: "Rottweiler", breed: "Working", description: "Confident, loyal, and devoted guardian.", image: "./image/rottweiler.jpg" },
   { name: "German Shepherd", breed: "Herding", description: "Intelligent, versatile, and loyal working dog.", image: "./image/shepherd.jpg" },
   { name: "Japanese Spitz", breed: "Spitz", description: "Small, white, fluffy companion dog.", image: "./image/spitz.jpg" },
-  { name: "Tibetan Mastiff", breed: "Mastiff", description: "Powerful, protective, and majestic guardian breed.", image: "./image/tibetian-mastiff.jpg" }
+  { name: "Tibetan Mastiff", breed: "Mastiff", description: "Powerful, protective, and majestic guardian breed.", image: "./image/tibetian-mastiff.jpg" },
+  { name: "Apso", breed: "non sporting dog breed", image: "./image/apso.jpeg", description: "Smart, confident and aloof in strangers." },
+  { name: "Chow Chow", breed: "very independent and aloof", image: "./image/chow chow.jpeg", description: "No Temperament: Aloof, Loyal, Independent, Quiet." },
+  { name: "Siberian Husky", breed: "compact body, well-furred coat, erect ears, and thick, sickle-shaped tail", image: "./image/siberian husky.jpeg", description: "strong willed, active, independent, mischievous, and playful."},
+  { name: "Chihuahua", breed: "tiny dog with a big attitude.", image: "./image/chihuahua.jpeg", description: "Long hair and short coats."},
+  { name: "Pomeranian", breed: "Popular toy breeds", image: "./image/pomeranian.jpeg", description: "Glorious coat, smiling, foxy face, and vivacious personality."},
+  { name: "Shih-tzu", breed: "Tibetan toy breed", image: "./image/shih tzu.jpeg", description: "Clear, alert eyes"  },
+  { name: "British Bulldog", breed: "thick folds of skin on the brow; round, black, wide-set eyes", image: "./image/british bulldog.jpeg", description: "Equable and kind, resolute, and courageous." },
+  { name: "Doberman Pinsher", breed: "Intelligence, loyalty, and athleticism.", image: "./image/doberman.jpeg",  description: "Confident and Courageous." },
+  { name: "Belgian Malinois", breed: "Intelligent, protective, and highly energetic", image: "./image/belgian malinois.jpeg", description: "Loyal, confident, and trainable, with natural guarding instincts." },
+  { name: "French Bulldog", breed: "companion dog breeds", image: "./image/french bulldog.jpeg", description: "Compact size, muscular body, and distinctive bat-shaped ears." },
+  { name: "Cocker Spaniel", breed: "sporting group breed", image: "./image/cocker spaniel.jpeg", description: "Naturally energetic and aware due to this makes them great hunting partners." }
+
 ];
 
 function runSearch() {

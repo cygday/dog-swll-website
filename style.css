@@ -498,7 +498,7 @@ label {
 .product-rating {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     margin-bottom: 12px;
     font-size: 14px;
 }
@@ -507,10 +507,16 @@ label {
     color: #ffc107;
 }
 
+.rating-score {
+    color: #777;
+}
+
 .product-footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
-    margin-top: auto;
+    margin-top: 15px;
 }
 
 .product-price {
@@ -536,6 +542,10 @@ label {
     background: #ee5a52;
     transform: translateY(-2px);
 }
+
+
+
+
 
 /* ===== CART & WISHLIST SIDEBARS ===== */
 .cart-sidebar, .wishlist-sidebar {
@@ -781,12 +791,18 @@ label {
 
 @media (max-width: 768px) {
     .products-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 15px;
     }
 
     .order-row {
         grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 520px) {
+        .products-grid {
+            grid-template-columns: 1fr;
+        }
     }
 
     .cart-sidebar, .wishlist-sidebar {
