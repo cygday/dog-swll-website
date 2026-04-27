@@ -57,3 +57,4 @@ french bulldog -> 30000
 
 cocker spaniel -> 10000
 
+make each page for services listed
