@@ -8,7 +8,8 @@ const puppyProducts = [
     image: "./image/beagle.jpg",
     age: "8 weeks",
     health: "Vaccinated, Healthy",
-    description: "Friendly, curious, and energetic hunting dog."
+    description: "Friendly, curious, and energetic hunting dog.",
+    rating: '3'
   },
   {
     id: 2,
@@ -18,7 +19,8 @@ const puppyProducts = [
     image: "./image/golden-retriever.jpg",
     age: "10 weeks",
     health: "Vaccinated, Certified",
-    description: "Friendly and intelligent family companion."
+    description: "Friendly and intelligent family companion.",
+    rating: '5'
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ const puppyProducts = [
     image: "./image/labrador.jpg",
     age: "8 weeks",
     health: "Healthy, Registered",
-    description: "Loyal, outgoing, and even-tempered."
+    description: "Loyal, outgoing, and even-tempered.",
+    rating: '4'
   },
   {
     id: 4,
@@ -38,7 +41,8 @@ const puppyProducts = [
     image: "./image/poodle.jpg",
     age: "9 weeks",
     health: "Vaccinated, Healthy",
-    description: "Intelligent and versatile companion dog."
+    description: "Intelligent and versatile companion dog.",
+    rating: '3'
   },
   {
     id: 5,
@@ -48,7 +52,8 @@ const puppyProducts = [
     image: "./image/pug.jpg",
     age: "8 weeks",
     health: "Healthy, Cute",
-    description: "Charming, mischievous, and playful small dog."
+    description: "Charming, mischievous, and playful small dog.",
+    rating: '4'
   },
   {
     id: 6,
@@ -58,7 +63,8 @@ const puppyProducts = [
     image: "./image/rottweiler.jpg",
     age: "10 weeks",
     health: "Strong, Healthy",
-    description: "Confident, loyal, and devoted guardian."
+    description: "Confident, loyal, and devoted guardian.",
+    rating: '5'
   },
   {
     id: 7,
@@ -68,7 +74,8 @@ const puppyProducts = [
     image: "./image/shepherd.jpg",
     age: "9 weeks",
     health: "Intelligent, Alert",
-    description: "Intelligent, versatile, and loyal working dog."
+    description: "Intelligent, versatile, and loyal working dog.",
+    rating: '3'
   },
   {
     id: 8,
@@ -78,7 +85,8 @@ const puppyProducts = [
     image: "./image/spitz.jpg",
     age: "6 weeks",
     health: "Fluffy, Healthy",
-    description: "Small, white, fluffy companion dog."
+    description: "Small, white, fluffy companion dog.",
+    rating: '4'
   },
   {
     id: 9,
@@ -88,7 +96,8 @@ const puppyProducts = [
     image: "./image/tibetian-mastiff.jpg",
     age: "12 weeks",
     health: "Majestic, Premium",
-    description: "Powerful, protective, and majestic guardian breed."
+    description: "Powerful, protective, and majestic guardian breed.",
+    rating: '5'
   },
     {
     id: 10,
@@ -98,7 +107,8 @@ const puppyProducts = [
     image: "./image/apso.jpeg",
     age: "12 weeks",
     health: "Inquisitive and engaging",
-    description: "Smart, confident and aloof in strangers."
+    description: "Smart, confident and aloof in strangers.",
+    rating: '5'
   },
     {
     id: 11,
@@ -108,7 +118,8 @@ const puppyProducts = [
     image: "./image/chow chow.jpeg",
     age: "8 weeks",
     health: "High-energy and playful",
-    description: "No Temperament: Aloof, Loyal, Independent, Quiet."
+    description: "No Temperament: Aloof, Loyal, Independent, Quiet.",
+    rating: '3'
   },
     {
     id: 12,
@@ -118,7 +129,8 @@ const puppyProducts = [
     image: "./image/siberian husky.jpeg",
     age: "6 weeks",
     health: "Scrappy and playful",
-    description: "strong willed, active, independent, mischievous, and playful."
+    description: "strong willed, active, independent, mischievous, and playful.",
+    rating: '4'
   },
     {
     id: 13,
@@ -128,7 +140,8 @@ const puppyProducts = [
     image: "./image/chihuahua.jpeg",
     age: "5 weeks",
     health: "High-energy and playful",
-    description: "Long hair and short coats."
+    description: "Long hair and short coats.",
+    rating: '5'
   },
     {
     id: 14,
@@ -138,7 +151,8 @@ const puppyProducts = [
     image: "./image/pomeranian.jpeg",
     age: "8 weeks",
     health: "Bright-eyed and bushy-tailed",
-    description: "Glorious coat, smiling, foxy face, and vivacious personality."
+    description: "Glorious coat, smiling, foxy face, and vivacious personality.",
+    rating: '5'
   },
     {
     id: 15,
@@ -148,7 +162,8 @@ const puppyProducts = [
     image: "./image/shih tzu.jpeg",
     age: "6 weeks",
     health: " Energy & Playfulness",
-    description: "Clear, alert eyes"
+    description: "Clear, alert eyes",
+    rating: '4'
   },
     {
     id: 16,
@@ -158,7 +173,8 @@ const puppyProducts = [
     image: "./image/british bulldog.jpeg",
     age: "6 weeks",
     health: "Blemish-free skin",
-    description: "Equable and kind, resolute, and courageous."
+    description: "Equable and kind, resolute, and courageous.",
+    rating: '5'
   },
     {
     id: 17,
@@ -168,7 +184,8 @@ const puppyProducts = [
     image: "./image/doberman pinsher.jpeg",
     age: "6 weeks",
     health: "Inquisitive and engaging",
-    description: "Confident and Courageous."
+    description: "Confident and Courageous.",
+    rating: '3'
   },
     {
     id: 18,
@@ -178,7 +195,8 @@ const puppyProducts = [
     image: "./image/belgian malinois.jpeg",
     age: "8 weeks",
     health: "Solid/Firm muscle tone",
-    description: "Loyal, confident, and trainable, with natural guarding instincts."
+    description: "Loyal, confident, and trainable, with natural guarding instincts.",
+    rating: '4'
   },
     {
     id: 19,
@@ -188,7 +206,8 @@ const puppyProducts = [
     image: "./image/french bulldog.jpeg",
     age: "10 weeks",
     health: "Playful yet calm",
-    description: "Compact size, muscular body, and distinctive bat-shaped ears."
+    description: "Compact size, muscular body, and distinctive bat-shaped ears.",
+    rating: '5'
   },
     {
     id: 20,
@@ -198,7 +217,8 @@ const puppyProducts = [
     image: "./image/cocker spaniel.jpeg",
     age: "12 weeks",
     health: "Excellent obedience",
-    description: "Naturally energetic and aware due to this makes them great hunting partners."
+    description: "Naturally energetic and aware due to this makes them great hunting partners.",
+    rating: '3'
   }
 ];
 
@@ -393,10 +413,12 @@ class UIController {
             <strong>Health:</strong> ${puppy.health}<br>
             <em>${puppy.description}</em>
           </div>
+         
+
           <div class="product-rating">
-            <span class="star-rating">★★★★★</span>
-            <span class="rating-score">(4.9)</span>
-          </div>
+  <span class="star-rating">${'★'.repeat(Math.floor(puppy.rating))}${'☆'.repeat(5-Math.floor(puppy.rating))}</span>
+  <span class="rating-score">(${puppy.rating})</span>
+</div>
           <div class="product-footer">
             <span class="product-price">NPR ${puppy.price.toLocaleString()}</span>
             <button class="add-to-cart-btn" data-id="${puppy.id}">🛒 Purchase</button>
