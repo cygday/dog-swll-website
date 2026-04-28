@@ -98,7 +98,7 @@ label {
     border-radius: 5px;
 }
 .navbar ul li a:hover, .navbar ul li a.active {
-    background: #555;
+    background:#d6ac78;
     color: #fff;
 }
 
@@ -992,7 +992,7 @@ footer{
 .footer-container button {
     height: 30px;
     width: 120px;
-    background: #555;
+    background: #d6ac78;
 }
 
 .footer-container button.my-btn{
