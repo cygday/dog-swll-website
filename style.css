@@ -217,6 +217,100 @@ label {
     background: #f9f9f9;
 }
 
+.service-detail {
+    padding: 90px 5% 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-detail-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.service-detail-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.service-detail-text p {
+    line-height: 1.8;
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.service-detail-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.service-overview,
+.service-benefits {
+    padding: 50px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-overview h2,
+.service-benefits h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.service-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.service-feature-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.service-feature-card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.service-feature-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.service-benefits p {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.service-benefits ul {
+    display: grid;
+    gap: 12px;
+    list-style: disc inside;
+    color: #444;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .service-detail-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .service-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -234,7 +328,6 @@ label {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     display: flex;
-    
     flex-direction: column;
     height: 100%;
 }
@@ -250,6 +343,23 @@ label {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.service-link-btn {
+    display: inline-block;
+    margin-top: auto;
+    padding: 12px 18px;
+    background: #d6ac78;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.service-link-btn:hover {
+    background: #b57a4e;
 }
 
 .service-item h3 {
