@@ -219,6 +219,17 @@ const puppyProducts = [
     health: "Excellent obedience",
     description: "Naturally energetic and aware due to this makes them great hunting partners.",
     rating: '3'
+  },
+  {
+    id: 21,
+    name: "Dachshund",
+    breed: "Scent Hounds",
+    price: 10000,
+    image: "./image/dachshund.jpeg",
+    age: "10 weeks",
+    health: "Vaccinated, Healthy",
+    description: "Hunting badgers, foxes, and rabbits, Long bodies with short, stubby legs.",
+    rating: '5'
   }
 ];
 
@@ -754,8 +765,8 @@ const dogs = [
   { name: "Doberman Pinsher", breed: "Intelligence, loyalty, and athleticism.", image: "./image/doberman.jpeg",  description: "Confident and Courageous." },
   { name: "Belgian Malinois", breed: "Intelligent, protective, and highly energetic", image: "./image/belgian malinois.jpeg", description: "Loyal, confident, and trainable, with natural guarding instincts." },
   { name: "French Bulldog", breed: "companion dog breeds", image: "./image/french bulldog.jpeg", description: "Compact size, muscular body, and distinctive bat-shaped ears." },
-  { name: "Cocker Spaniel", breed: "sporting group breed", image: "./image/cocker spaniel.jpeg", description: "Naturally energetic and aware due to this makes them great hunting partners." }
-
+  { name: "Cocker Spaniel", breed: "sporting group breed", image: "./image/cocker spaniel.jpeg", description: "Naturally energetic and aware due to this makes them great hunting partners." },
+  { name: "Dachshund", breed: "scent hound, Hunting badgers, foxes, and rabbits breed", image: "./image/dachshund.jpeg", description: "Long bodies with short, stubby legs." }
 ];
 
 function runSearch() {
